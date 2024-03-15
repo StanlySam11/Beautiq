@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiq</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#category" class="logo"> <img src="images/logo.png" alt=""> </a>
+
+    <form action="" class="search-form"  >
+        <input type="search" name="" placeholder="search here..." id="search-box" onkeyup="mySearch(
+            
+        )">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <ul id="search-results"></ul>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">home</a>
+    <a href="#shop">shop</a>
+    <a href="#gallery">gallery</a>
+    <a href="#team">team</a>
+    <a href="#arrivals">arrivals</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    
+    <div class="slide active">
+        <div class="content">
+            
+            <span style="color: black;">Beautiq</span>
+            <h3>cosmetics</h3>
+            <a href="#about" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+
+   
+
+    <div class="slide">
+        <div class="content">
+           
+            <span style="color: black;">Beautiq</span>
+            <h3>skin care</h3>
+            <a href="#about" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <a href="#shop" class="box">
+        <img src="images/category-1.jpg" alt="#">
+        <p>cosmetics</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-2.jpg" alt="">
+        <p>makeup</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-3.png" alt="">
+        <p>powder</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-4.jpg" alt="">
+        <p>lotions</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-5.png" alt="">
+        <p>lipstick</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-6.jpg" alt="">
+        <p>mascara</p>
+    </a>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3>makeup makes difference</h3>
+        <p>Discover the essence of beauty at our cosmetics store, where quality meets affordability and innovation intertwines with tradition. With a commitment to excellence, we curate a wide selection of premium products that cater to every individual's unique style and skincare needs. Our knowledgeable staff are dedicated to providing personalized advice and expert recommendations to help you achieve your desired look with confidence</p>
+        
+    </div>
+    
+</section>
+
+<!-- about section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1>featured products</h1>
+        <p>Discover the transformative power of our latest cosmetic products, meticulously crafted to deliver unparalleled results. Our innovative formulas combine advanced technology with natural ingredients to provide a harmonious blend of nourishment and revitalization.</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Clear blue PET bottle bath and shower gel, 250 
+                        m</p>
+                    <div class="price">42,000 IQD <span></span></div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Clear blue PET bottle bath and shower gel, 250 
+                        m</p>
+                    <div class="price">10,000 IQD <span></span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> HYDRA PROTECTOR anti-ageing and 24H 
+                        hydrating night cream, 50 ml</p>
+                    <div class="price">42,500 IQD <span></span></div>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> CHAPTER 05 clear orange jar   body butter, 200 
+                        ml</p>
+                    <div class="price">14,000 IQD <span></span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-10.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> M|D|S BATH & BODY - TEMPTATION beauty 
+                        duo (14x21.5x5 cm): * body wash, 200ml * 
+                        body lotion 150ml - pale purple - elegant 
+                        character fragrance - liquorice extract - 
+                        produced in The Netherlands  </p>
+                    <div class="price">22,500 IQD <span></span></div>
+                </div>
+            </div>
+           
+           
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-13.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Trendy beauty booster lip balm set (20x15x2 
+                        cm) with lip balm tubes, 5x15 ml: yellow, jazzy 
+                        and crazy, pineapple flavor| peach, pretty and 
+                        silly, papaya flavor| pink cheeky and flirty, 
+                        watermelon flavor| purple groovy and dandy 
+                        plum flavor| violet dreamy and lazy, grape 
+                        flavour</p>
+                    <div class="price">28,750 IQD <span></span></div>
+                </div>
+            </div>
+            
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-17.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>PURE CLEANSE duo-phase eye make-up 
+                        remover, 100 ml – highly effective for thorough 
+                        and quick eye make-up removal</p>
+                    <div class="price">23,500 IQD <span></span></div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-21.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Bathique fashion boosting massage oil, 100 ml</p>
+                    <div class="price">6,500 IQD <span></span></div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-23.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-25.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Inspiration pure hand and nail cream - 75 ml</p>
+                    <div class="price">8,000 IQD <span></span></div>
+                </div>
+            </div>
+            
+       
+          
+           
+           
+          
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-36.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Jazzy and crazy trio (body mist 50ml, lip balm 
+                        15 ml, hand cream 65 ml)</p>
+                    <div class="price">24,000 IQD <span></span></div>
+                </div>
+            </div>
+            
+           
+           
+            
+           
+          
+                   
+                   
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Dreamy and lazy trio body mist 50ml, lip balm 
+                        15 ml, hand cream 65 ml</p>
+                    <div class="price">24,000 IQD <span></span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p> Inspiration pure body wash, 500 ml – matt pale 
+                        lilac</p>
+                    <div class="price">12,750 IQD <span></span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>HYDRA PROTECTOR anti-ageing face serum, 30 
+                        m</p>
+                    <div class="price">60,000 IQD <span></span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount"></span>
+                    <img src="images/product-8.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Temptation pure body wash, 500 ml – matt 
+                        pale purple</p>
+                    <div class="price">12,750 IQD <span></span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1>our gallery</h1>
+        <p>Welcome to our cosmetics gallery, where beauty meets innovation and luxury! Step into a world of endless possibilities as you explore our carefully curated collection of skincare, makeup, and fragrance products. From rejuvenating serums to radiant foundations, our gallery showcases the latest trends and timeless classics to suit every style and preference.</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>our team</h1>
+        <p>Meet our dedicated team of experts, passionate about beauty and committed to excellence. With years of experience in cosmetic science, our researchers tirelessly explore the latest innovations to bring you cutting-edge products that redefine skincare standards.</p>
+    </div>
+
+    <div class="box-container">
+
+      
+        <div class="box">
+            <div class="image">
+                <img src="images/team-2.png" alt="">
+                <div class="share">
+                    <a href="https://m.facebook.com/profile.php/?id=100004242909852&name=STSDirectNavUserDecorator" class="fab fa-facebook-f"></a>
+                   
+                    <a href="https://www.instagram.com/stanlys20?igsh=OGVneGl5aTFhdzl5&utm_source=qr" class="fab fa-instagram"></a>
+                    
+                </div>
+            </div>
+            <div class="content">
+                <h3>Stanly Sam</h3>
+                <p>CEO</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- team section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+        <h1>new arrivals</h1>
+        <p>Introducing our latest arrivals, carefully curated to elevate your beauty routine to new heights. Immerse yourself in a world of innovation and indulgence as you explore our newest additions, each meticulously crafted to deliver unparalleled results. </p>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Body lotion - bioactive oil - 150 ml</p>
+                    <div class="price">13,000 IQD <span></span></div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Post-shave cooling balm - bioactive oil - 100 ml</p>
+                    <div class="price">10,000 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Face wash and charcoal scrub - 75 ml</p>
+                    <div class="price">8,000 IQD <span></span></div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Shave cream - activated charcoal and aloe vera - 
+                        100 ml</p>
+                    <div class="price">9,500 IQD <span></span></div>
+                  
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>INTENSE REPAIR uplifting eyelid and eye 
+                        contour correcting serum, 15 ml</p>
+                    <div class="price">49,500 IQD <span></span></div>
+                
+                </div>
+            </div>
+
+            
+
+            
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> INTENSE REPAIR advanced anti-wrinkle 
+                        revitalizing day cream SPF 15, 50 ml</p>
+                    <div class="price">58,750 IQD <span></span></div>
+                   
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>HYDRA PROTECTOR anti-ageing day cream SPF 
+                        15, 50 ml</p>
+                    <div class="price">49,250 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> HYDRA PROTECTOR anti-ageing and 24H 
+                        hydrating night cream, 50 ml</p>
+                    <div class="price"> 42,500 IQD  <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> WHITENING ILLUMINATING anti-ageing day 
+                        cream SPF 15, 50 ml</p>
+                    <div class="price">43,000 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-15.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> HYDRA PROTECTOR anti-ageing and firming 
+                        eye serum, 15 m</p>
+                    <div class="price">43,500 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-16.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> HYDRA PROTECTOR anti-ageing and 24H 
+                        hydrating night cream, 50 ml</p>
+                    <div class="price">46,500 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-17.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>INTENSE REPAIR anti-wrinkle and 24H 
+                        hydrating night cream, 50 ml</p>
+                    <div class="price">50,500 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-18.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Anto-ageing face cream - 75 ml</p>
+                    <div class="price">10,750 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-19.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> HYDRA PROTECTOR anti-ageing face serum, 30 
+                        ml</p>
+                    <div class="price">51,000 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-20.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Shampoo - activated charcoal - 150 ml</p>
+                    <div class="price">9,500 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-21.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Body wash - activated charcoal - 150 ml</p>
+                    <div class="price">9,500 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-22.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Deodorant roll-on - activated charcoal - 100 ml</p>
+                    <div class="price">13,000 IQD <span></span></div>
+                   
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- reviews section starts  -->
+
+
+
+<!-- reviews section ends  -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>Shipping prices</h3>
+        <p>At our cosmetics gallery, we offer competitive and transparent shipping prices to ensure a hassle-free shopping experience for our customers. Our shipping prices goes from 5,000-10,000 IQD</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>secure payment</h3>
+        <p>Rest assured, your security is our top priority when it comes to payment. Our gallery employs state-of-the-art encryption technology to ensure that your transactions are safe and secure. </p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>2/4 support</h3>
+        <p>At our cosmetics gallery, we are dedicated to providing unparalleled customer support every step of the way. Our team of knowledgeable and friendly support representatives is available 24/7 to assist you with any questions, concerns, or assistance you may need. </p>
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+            <a class="link" href="#team"> <i class="fas fa-angle-right"></i> team</a>
+            <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> arrivals</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +964 750 205 2232 </p>
+            
+            <p> <i class="fas fa-envelope"></i> stanly.sam23@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Erbil, Iraq - 44001 </p>
+            <div class="share">
+
+                <a href="https://www.instagram.com/beautiqcosmetics?igsh=MWNjZ3RsaDYzMmZrdw%3D%3D&utm_source=qr" class="fab fa-instagram"></a>
+                <a href="https://web.facebook.com/FochiCosmetics/" class="fab fa-facebook-f"></a>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="credit"> created by <span><a href="#">Yousif Sudad</a></span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="js/script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
